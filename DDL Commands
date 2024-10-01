@@ -1,0 +1,25 @@
+CREATE TABLE artist(name VARCHAR(100));
+
+CREATE TABLE location(state VARCHAR(50));
+
+CREATE TABLE typeof_art(year int);
+
+CREATE TABLE art_type(typeID int primary key);
+
+ALTER TABLE artist add column birthyear int;
+
+ALTER TABLE artist add column birthplace VARCHAR(100);
+
+ALTER TABLE artist add column artistID int primary key;
+
+ALTER TABLE location add column city VARCHAR(100);
+
+ALTER TABLE location add column locationID int primary key;
+
+ALTER TABLE typeof_art add column title VARCHAR(100);
+
+ALTER TABLE typeof_art add column type VARCHAR(100);
+
+ALTER TABLE typeof_art add column description VARCHAR(300);
+
+ALTER TABLE typeof_art add column artID int primary key;
